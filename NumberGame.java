@@ -47,7 +47,7 @@ public class NumberGame {
                     guessedCorrectly = true;
                     score++;
                 }
-                scanner.close();
+
                 attempts++;
             }
 
@@ -63,6 +63,7 @@ public class NumberGame {
             if (!playAgainResponse.equalsIgnoreCase("yes")) {
                 playAgain = false;
             }
+            scanner.close();
         }
 
         System.out.println("\nGame over! Your score is: " + score);
